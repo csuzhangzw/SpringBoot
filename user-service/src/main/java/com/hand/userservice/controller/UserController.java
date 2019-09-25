@@ -50,6 +50,6 @@ public class UserController {
             responseData.setMessage("用户名或密码不正确！");
         }
 
-        return new ResponseData();
+        return new ResponseData(iamUserList);
     }
 }

@@ -1,6 +1,8 @@
 package com.hand.elasticsearch.controller;
 
 import com.hand.elasticsearch.entity.People;
+import com.hand.elasticsearch.entity.ResponseData;
+import com.hand.elasticsearch.service.IUserService;
 import com.hand.elasticsearch.utils.DateTimeUtil;
 import org.elasticsearch.action.ActionListener;
 import org.elasticsearch.action.DocWriteRequest;
@@ -21,6 +23,7 @@ import org.elasticsearch.client.RestHighLevelClient;
 import org.elasticsearch.common.xcontent.XContentBuilder;
 import org.elasticsearch.common.xcontent.XContentFactory;
 import org.elasticsearch.common.xcontent.XContentType;
+import org.omg.CORBA.PRIVATE_MEMBER;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -46,6 +49,9 @@ public class PeopleController {
     @Autowired
     private RestHighLevelClient client;
 
+    @Autowired
+    private IUserService userService;
+
     /**
      * 同步方式发送获取文档请求
      *
@@ -60,8 +66,13 @@ public class PeopleController {
                               @RequestParam(name = "loginName") String loginName,
                               @RequestParam(name = "password") String password) throws Exception {
 
-        if ("dylan".equals(loginName) && "123456".equals(password)) {
-            throw new Exception("用户名或密码错误！");
+        if (StringUtils.isEmpty(loginName) || StringUtils.isEmpty(password)) {
+            throw new Exception("用户名或密码不能为空！");
+        } else {
+            ResponseData responseData = userService.validateUser(loginName, password);
+            if (!responseData.isSuccess()) {
+                throw new Exception("用户名或密码不正确！");
+            }
         }
 
         if (StringUtils.isEmpty(id)) {

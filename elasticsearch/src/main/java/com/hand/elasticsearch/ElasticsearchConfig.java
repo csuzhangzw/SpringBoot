@@ -5,6 +5,7 @@ import org.elasticsearch.client.RestClient;
 import org.elasticsearch.client.RestHighLevelClient;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.client.RestTemplate;
 
 @Configuration
 public class ElasticsearchConfig {
@@ -18,5 +19,10 @@ public class ElasticsearchConfig {
         HttpHost slave2 = new HttpHost("10.211.55.29", 7200, "http");
 
         return new RestHighLevelClient(RestClient.builder(master, slave1, slave2));
+    }
+
+    @Bean
+    public RestTemplate restTemplate() {
+        return new RestTemplate();
     }
 }
