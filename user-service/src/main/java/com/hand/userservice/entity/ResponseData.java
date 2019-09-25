@@ -1,5 +1,7 @@
 package com.hand.userservice.entity;
 
+import org.springframework.util.CollectionUtils;
+
 import java.util.List;
 
 public class ResponseData {
@@ -26,6 +28,9 @@ public class ResponseData {
     public ResponseData(List<?> list) {
         this(true);
         this.setRows(list);
+        if (!CollectionUtils.isEmpty(list)) {
+            this.setTotal((long) list.size());
+        }
     }
 
     public boolean isSuccess() {
