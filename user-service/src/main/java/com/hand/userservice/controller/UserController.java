@@ -1,5 +1,6 @@
 package com.hand.userservice.controller;
 
+import com.alibaba.dubbo.config.annotation.Reference;
 import com.hand.userservice.entity.IamUser;
 import com.hand.userservice.entity.ResponseData;
 import com.hand.userservice.service.IIamUserService;
@@ -22,7 +23,7 @@ public class UserController {
 
     private static Logger logger = LoggerFactory.getLogger(UserController.class);
 
-    @Autowired
+    @Reference(version = "1.0")
     private IIamUserService iIamUserService;
 
     /**

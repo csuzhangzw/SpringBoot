@@ -1,14 +1,14 @@
 package com.hand.userservice.service.impl;
 
+import com.alibaba.dubbo.config.annotation.Service;
 import com.hand.userservice.entity.IamUser;
 import com.hand.userservice.mapper.IamUserMapper;
 import com.hand.userservice.service.IIamUserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Service
+@Service(version = "1.0", timeout = 3000)
 public class IamUserServiceImpl implements IIamUserService {
 
     @Autowired
