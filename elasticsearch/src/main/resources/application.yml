@@ -7,7 +7,7 @@ dubbo:
   application:
     name: consumer
   registry:
-    address: zookeeper://10.211.55.29:2181
+    address: zookeeper://zookeeper_host:2181
   scan:
     base-packages: com.hand.userservice
   protocol:
