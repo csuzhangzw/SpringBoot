@@ -23,4 +23,5 @@ dubbo:
     base-packages: com.hand.userservice
   protocol:
     name: dubbo
+    host: 172.17.0.3
     port: 20880
