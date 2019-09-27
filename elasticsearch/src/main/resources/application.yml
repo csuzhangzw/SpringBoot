@@ -7,9 +7,10 @@ dubbo:
   application:
     name: consumer
   registry:
-    address: zookeeper://zookeeper_host:2181
+    address: zookeeper://10.211.55.29:2181
   scan:
     base-packages: com.hand.elasticsearch.controller
   protocol:
     name: dubbo
     port: 20880
+    host: 10.211.55.29
