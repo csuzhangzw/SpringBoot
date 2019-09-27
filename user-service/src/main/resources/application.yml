@@ -23,4 +23,4 @@ dubbo:
     base-packages: com.hand.userservice
   protocol:
     name: dubbo
-    port: 20880
+    port: 20881
