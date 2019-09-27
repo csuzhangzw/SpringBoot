@@ -1,6 +1,0 @@
-com/hand/elasticsearch/ElasticsearchConfig.class
-com/hand/elasticsearch/ElasticsearchApplication.class
-com/hand/elasticsearch/entity/People.class
-com/hand/elasticsearch/controller/PeopleController.class
-com/hand/elasticsearch/controller/PeopleController$1.class
-com/hand/elasticsearch/utils/DateTimeUtil.class
