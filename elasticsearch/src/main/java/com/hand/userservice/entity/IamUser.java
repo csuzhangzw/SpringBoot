@@ -1,6 +1,8 @@
 package com.hand.userservice.entity;
 
-public class IamUser {
+import java.io.Serializable;
+
+public class IamUser implements Serializable {
 
     private Long id;
 

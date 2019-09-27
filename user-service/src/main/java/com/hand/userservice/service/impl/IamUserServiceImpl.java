@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
 
-@Service(version = "1.0", timeout = 3000)
+@Service(version = "1.0", timeout = 6000, interfaceClass = IIamUserService.class)
 public class IamUserServiceImpl implements IIamUserService {
 
     @Autowired
