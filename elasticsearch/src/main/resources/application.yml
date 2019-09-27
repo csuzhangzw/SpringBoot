@@ -12,4 +12,4 @@ dubbo:
     base-packages: com.hand.elasticsearch.controller
   protocol:
     name: dubbo
-    port: -1
+    port: 20880
