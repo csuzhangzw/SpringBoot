@@ -10,3 +10,6 @@ dubbo:
     address: zookeeper://10.211.55.29:2181
   scan:
     base-packages: com.hand.elasticsearch.controller
+  protocol:
+    name: dubbo
+    port: -1
