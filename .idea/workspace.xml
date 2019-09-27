@@ -102,20 +102,20 @@
         <counts>
           <entry key="Dockerfile" value="39" />
           <entry key="java" value="441" />
-          <entry key="sh" value="37" />
+          <entry key="sh" value="45" />
           <entry key="txt" value="15" />
           <entry key="xml" value="30" />
-          <entry key="yml" value="349" />
+          <entry key="yml" value="350" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Bash" value="37" />
+          <entry key="Bash" value="45" />
           <entry key="Dockerfile" value="39" />
           <entry key="JAVA" value="441" />
           <entry key="PLAIN_TEXT" value="15" />
           <entry key="XML" value="30" />
-          <entry key="YAML" value="349" />
+          <entry key="YAML" value="350" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -170,7 +170,7 @@
         <entry file="file://$PROJECT_DIR$/user-service/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="525">
-              <caret line="25" column="15" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
+              <caret line="25" column="15" lean-forward="true" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -178,8 +178,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/user-service/build.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="126">
+              <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -307,12 +307,12 @@
         <option value="$PROJECT_DIR$/user-service/src/main/java/com/hand/userservice/UserServiceApplication.java" />
         <option value="$PROJECT_DIR$/elasticsearch/src/main/java/com/hand/userservice/service/IIamUserService.java" />
         <option value="$PROJECT_DIR$/elasticsearch/build.sh" />
-        <option value="$PROJECT_DIR$/user-service/build.sh" />
-        <option value="$PROJECT_DIR$/user-service/build.sh" />
         <option value="$PROJECT_DIR$/elasticsearch/build.sh" />
         <option value="$PROJECT_DIR$/user-service/Dockerfile" />
         <option value="$PROJECT_DIR$/elasticsearch/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/user-service/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/user-service/build.sh" />
+        <option value="$PROJECT_DIR$/user-service/build.sh" />
         <option value="$PROJECT_DIR$/user-service/src/main/resources/application.yml" />
       </list>
     </option>
@@ -471,7 +471,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1569572175429" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1569572314660" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -795,11 +795,25 @@
       <option name="project" value="LOCAL" />
       <updated>1569571783428</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="[MOD]本地调通">
+      <created>1569572004030</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1569572004030</updated>
+    </task>
+    <task id="LOCAL-00035" summary="[MOD]本地调通">
+      <created>1569572200364</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1569572200364</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39026000" />
+    <option name="totallyTimeSpent" value="39263000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -2038,13 +2052,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user-service/build.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/user-service/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
@@ -2073,10 +2080,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/user-service/build.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/user-service/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
-          <caret line="25" column="15" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
+          <caret line="25" column="15" lean-forward="true" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
         </state>
       </provider>
     </entry>
