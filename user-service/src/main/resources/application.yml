@@ -5,7 +5,7 @@ spring:
   application:
     name: user-service
   datasource:
-    url: jdbc:mysql://10.211.55.29:3306/hcbm_platform?useUnicode=true&characterEncoding=utf-8
+    url: jdbc:mysql://mysql_host:3306/hcbm_platform?useUnicode=true&characterEncoding=utf-8
     username: hcbm
     password: hcbm
     driver-class-name: com.mysql.jdbc.Driver
@@ -18,7 +18,7 @@ dubbo:
   application:
     name: provider
   registry:
-    address: zookeeper://10.211.55.29:2181
+    address: zookeeper://zookeeper_host:2181
   scan:
     base-packages: com.hand.userservice.*
   protocol:
