@@ -24,4 +24,4 @@ dubbo:
   protocol:
     name: dubbo
     port: 20880
-    host: zookeeper_host
+    host: 10.211.55.29
